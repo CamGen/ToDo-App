@@ -9,13 +9,31 @@
     </head>
 
     <body>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#top">Home</a> |</li>
                 <li><a href="#create">Create</a> |</li>
                 <li><a href="#remove">Remove</a> |</li>
             </ul>
         </nav>
+
+        <div class="home">
+            <h1>Lists</h1>
+        </div>
+
+        <div class="newItem">
+            <h2>New Task:</h2>
+            <input type="text" id="input" placeholder="Enter task here...">
+            <span onclick="alert('Write a JavaScript function')" class="addBtn">Add</span>
+        </div>
+
+        <ul id="itemList">
+            <li>Note 1</li>
+            <li>Note 2</li>
+            <li>Note 3</li>
+            <li>Note 4</li>
+        </ul>
+
     </body>
 
 </html>
