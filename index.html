@@ -2,7 +2,7 @@
 <html lang=en>
 
     <head>
-        <title>Tasks</title>
+        <title>ToDo App</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
@@ -18,17 +18,21 @@
         </nav>
 
         <div class="home">
-            <h1>Lists</h1>
+            <h1 id="heading">Task Lists</h1>
         </div>
 
         <div class="newItem">
             <h2>New Task:</h2>
             <input type="text" id="input" placeholder="Enter task here...">
             <span onclick="alert('Write a JavaScript function')" class="addBtn">Add</span>
+            <br>
+            <br>
+            <hr>
         </div>
+        <br>
 
         <ul id="itemList">
-            <li>Note 1</li>
+            <li class="checked">Note 1</li>
             <li>Note 2</li>
             <li>Note 3</li>
             <li>Note 4</li>
