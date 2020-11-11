@@ -39,6 +39,8 @@
 
 .newItem {
     padding-left: 40px;
+    color: white;
+    text-align: center;
 }
 
 ul {
@@ -107,7 +109,6 @@ ul li.checked::before {
   width: 25%;
   background: #d9d9d9;
   color: #555;
-  float: left;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
