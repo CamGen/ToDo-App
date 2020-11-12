@@ -6,6 +6,32 @@ list.addEventListener('click', function(ev) {
     }
 }, false);
 
+/* Create remove symbol ("cross") button */
+function removeSymbol(){
+    var myNodelist = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "remove";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+    }
+}
+
+removeSymbol();
+
+/* Click on the remove button */
+var close = document.getElementsByClassName("remove");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+  removeSymbol();
+}
+
 /* Adding a new item to the list */
 function newItem() {
     let listItem = document.createElement("li");
@@ -31,25 +57,4 @@ function newItem() {
             div.style.display = "none";
         }
     }
-}
-
-/* Create remove "cross" symbol button */
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "remove";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-/* Click on the remove button */
-var close = document.getElementsByClassName("remove");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
 }
