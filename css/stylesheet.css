@@ -46,7 +46,6 @@
 .newItem {
     padding-left: 40px;
     color: white;
-    text-align: center;
 }
 
 ul {
@@ -110,11 +109,23 @@ ul li.checked::before {
     color: #ddd;
 }
 
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    padding-right: 40px;
+    float: left;
+    font-size: 16px;
+  }
+
 .addBtn {
   padding: 10px;
-  width: 25%;
+  width: 1fr;
   background: #d9d9d9;
   color: #555;
+  float: left;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
